@@ -1,9 +1,9 @@
-const Resume = () => {
+const Contact = () => {
     return (
         <div>
-            resume page
+            contact page
         </div>
     );
 };
 
-export default Resume;
+export default Contact;

@@ -1,9 +1,9 @@
-const Services = () => {
+const Work = () => {
     return (
         <div>
-            services page
+            work page
         </div>
     );
 };
 
-export default Services;
+export default Work;
