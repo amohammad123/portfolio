@@ -1,8 +1,9 @@
+'use client'
 import Link from "next/link";
 
-// components
 import Nav from "@/components/Nav";
 import {Button} from "@/components/ui/button";
+import MobileNav from "@/components/MobileNav";
 
 const Header = () => {
     return (
@@ -19,15 +20,16 @@ const Header = () => {
                 {/*  desktop nav and hire me button  */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav/>
-                    <Link href="/contact">
-                        <Button className={'bg-accent/30 hover:bg-accent/20'}>Hire me</Button>
+                    <Link href="/">
+                        <Button>Hire me</Button>
                     </Link>
                 </div>
 
                 {/* mobile nav */}
-                <div className="xl:hidden">mobile nav</div>
+                <div className={'xl:hidden'}>
+                    <MobileNav/>
+                </div>
             </div>
-
         </header>
     );
 };
